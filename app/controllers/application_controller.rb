@@ -9,7 +9,7 @@ get "/" do
 end
 
 post "/teams" do 
-  @team = Team.new(name: params[:name], motto: params[motto])
+  @team = Team.new(name: params[:name], motto: params[:motto])
   
   params[:team][:heroes].each do |details|
     Hero.new(details)
