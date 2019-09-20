@@ -7,7 +7,7 @@ class Team
     @name = params[:name]
     @motto = params[:motto]
     TEAMS << self
-  end 
+  end
   
   def self.all
     @@all
