@@ -2,7 +2,7 @@
 Team Motto: <%=@team_motto %>
 
 <%@team_members.each do |member| %>
-  <p>Hero Name: member[:name]</p>
+  <p>Hero Name: <%=member[:name]%></p>
   member[:power]
   member[:bio]
 <% end %>
