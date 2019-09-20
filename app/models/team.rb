@@ -1,7 +1,7 @@
 class Team 
   attr_accessor :name, :motto
   
-  TEAMS = []
+  @@all = []
   
   def intialize(params)
     @name = params[:name]
@@ -10,7 +10,7 @@ class Team
   end 
   
   def self.all
-    TEAMS
+    @@all
   end 
   
 end 
