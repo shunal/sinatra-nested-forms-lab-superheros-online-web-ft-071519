@@ -10,7 +10,7 @@ end
 
 post "/teams" do 
  
-  
+  binding.pry
   erb :show
 end 
 
